@@ -14,7 +14,7 @@ plt.style.use('seaborn-whitegrid')
 ## recall moving tensors to cpu gives a better description of errors in some cases
 
 ## for saveing model parameters after training
-save_path = r'C:\Users\M\OneDrive - Carleton University\Documents\my_stuff\Projects\Kaggle_Digit_Recognizer\DigitClassifier_saved_model.pt'
+save_path = r''
 
 ## setting device
 if torch.cuda.is_available():
@@ -31,7 +31,7 @@ batch_size = 32     ## takes about 25mins for one epoch with batch size 32
 
 
 ## first part is loading & handling then data
-image_train_flatenned = pd.read_csv(r'C:\Users\M\OneDrive - Carleton University\Documents\my_stuff\Projects\Kaggle_Digit_Recognizer\train.csv')
+image_train_flatenned = pd.read_csv(r'')
 labels = image_train_flatenned.label
 labels = labels.to_numpy()
 image_train_flatenned = image_train_flatenned.drop(['label'], axis=1)
